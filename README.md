@@ -7,7 +7,7 @@ My coursework repository. Each practical is under `PW<n>/Lab <X>/`.
 Create the environment for a given lab:
 
 ```bash
-conda env create -f PW<n>/Lab\ <X>/environment.yml
+conda env create -f PW<n>/Lab <X>/environment.yml
 conda activate cspc
 ```
 
@@ -15,20 +15,35 @@ conda activate cspc
 
 ## PW1 - Lab A: Reproducible Foundations
 
-**What I built:**
+In this lab, I set up a Conda environment and worked on a radioactive decay simulation.
 
-* Created a reproducible Conda environment for the practical work.
-* Implemented a radioactive decay simulation using both a pure-Python loop and a vectorised NumPy version.
-* Added automated tests with pytest and managed the project using Git and GitHub.
+I made two versions of the simulation:
 
-**Speed comparison (loop vs NumPy):**
+* one using a normal Python loop
+* one using NumPy
+
+The NumPy version was much faster than the normal Python version.
+
+**Speed comparison:**
 
 * loop: 1.835957 s
-* numpy: 0.000162 s
-* speed-up: 11354.16x faster
+* NumPy: 0.000162 s
+* speed-up: 11354.16x
+
+I also added tests using pytest and used Git and GitHub to keep track of my work.
 
 **Tests:** all passing? **yes**
 
 **Conclusion:**
 
-The NumPy implementation is much faster than the pure-Python loop for this simulation. In this test, NumPy was approximately 11,354 times faster. The project also has automated tests and a reproducible environment, making the work easier to run and verify.
+The main thing I learned from this lab is that NumPy can make calculations much faster than using a normal Python loop. I also learned how to use tests, Git, and a reproducible Conda environment for my project.
+
+---
+
+## PW1 - Lab B
+
+In this lab, I worked with radioactive decay data. The number of observed particles went down as time increased, which is what we expect from radioactive decay.
+
+The observed data was quite close to the analytical curve. The graph showed that both had a similar decreasing shape.
+
+I also used Snakemake to make the process easier. It takes the CSV data, runs the Python program, and creates the graph automatically. If nothing has changed, Snakemake does not run the program again.
