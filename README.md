@@ -47,3 +47,9 @@ In this lab, I worked with radioactive decay data. The number of observed partic
 The observed data was quite close to the analytical curve. The graph showed that both had a similar decreasing shape.
 
 I also used Snakemake to make the process easier. It takes the CSV data, runs the Python program, and creates the graph automatically. If nothing has changed, Snakemake does not run the program again.
+
+---
+
+## AI Assistance
+
+In PW1 : Lab A & Lab B , I used ChatGPT to help me understand the coursework instructions, troubleshoot errors, and understand the Python, Git, and Snakemake steps. I wrote and checked the final code and report myself.
