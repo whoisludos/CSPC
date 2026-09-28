@@ -50,6 +50,20 @@ I also used Snakemake to make the process easier. It takes the CSV data, runs th
 
 ---
 
+## PW2 — Lab A
+
+### Motion from Tracking Data
+
+The mean acceleration I got was **-8.58 m/s²**, which is fairly close to the expected value of **-9.81 m/s²** for free fall.
+
+The acceleration was much noisier than the position data. This is because when we differentiate the data, the small errors and noise in the measurements become bigger. Since we differentiated twice to get acceleration, the noise became even more noticeable. The standard deviation of the acceleration was **28.72 m/s²**.
+
+After integrating the acceleration to get the velocity and then the position, the recovered position was quite close to the original position. The biggest difference was only **0.78 m**. This shows that integration helps reduce the noise that appeared during differentiation.
+
+---
+
+
 ## AI Assistance
 
-In PW1 : Lab A & Lab B , I used ChatGPT to help me understand the coursework instructions, troubleshoot errors, and understand the Python, Git, and Snakemake steps. I wrote and checked the final code and report myself.
+In all PWs , I used ChatGPT to help me understand the coursework instructions, troubleshoot errors, and understand the Python, Git, and Snakemake steps. I wrote and checked the final code and report myself.
+
