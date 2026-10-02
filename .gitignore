@@ -3,3 +3,7 @@ __pycache__/
 
 .snakemake/
 *.png
+!PW2/Lab A/motion.png
+!PW2/Lab B/kinetics.png
+!PW2/Lab B/equilibrium.png
+!PW2/Lab B/titration.png

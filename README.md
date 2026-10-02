@@ -48,6 +48,10 @@ The observed data was quite close to the analytical curve. The graph showed that
 
 I also used Snakemake to make the process easier. It takes the CSV data, runs the Python program, and creates the graph automatically. If nothing has changed, Snakemake does not run the program again.
 
+## Conclusion
+
+In this lab, I learned how radioactive decay can be analysed using data and Python. I also learned how Snakemake can automate the analysis process and avoid running steps again when the data has not changed.
+
 ---
 
 ## PW2 — Lab A
@@ -60,10 +64,12 @@ The acceleration was much noisier than the position data. This is because when w
 
 After integrating the acceleration to get the velocity and then the position, the recovered position was quite close to the original position. The biggest difference was only **0.78 m**. This shows that integration helps reduce the noise that appeared during differentiation.
 
----
+## Conclusion
 
+In this lab, I learned how to calculate velocity and acceleration from noisy position data and how differentiation can increase the noise. I also learned that integrating the data back can reduce the noise and give a position close to the original one.
+
+---
 
 ## AI Assistance
 
-In all PWs , I used ChatGPT to help me understand the coursework instructions, troubleshoot errors, and understand the Python, Git, and Snakemake steps. I wrote and checked the final code and report myself.
-
+I used ChatGPT during the PWs to help me understand the coursework instructions, solve errors, and understand the Python, Git, and Snakemake steps. I wrote and checked the final code and report myself.
