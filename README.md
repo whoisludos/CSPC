@@ -70,6 +70,64 @@ In this lab, I learned how to calculate velocity and acceleration from noisy pos
 
 ---
 
+## PW2 - Lab B
+
+### Kinetics
+
+In this part, I worked with concentration data and tried to fit it to an exponential model. The model I used was **C(t) = C0 * exp(-k*t)**.
+
+The initial concentration was **104.082**. I used SLSQP to find the value of k that fitted the data best. The value of k was about **0.25**.
+
+I also made a graph of the data and the fitted curve. This made it easier to see how well the model matched the data.
+
+### Conclusion
+
+From this part, I learned how Python can be used to fit a mathematical model to experimental data. I also learned how optimization can be used to find an unknown value such as the rate constant.
+
+---
+
+### Chemical Equilibrium
+
+In this part, I worked with the reaction **H2 + I2 <-> 2HI** and used an equilibrium constant of **K = 15.6**.
+
+I solved the problem using two different methods: Newton's method and SLSQP. The results were almost the same:
+
+* Newton's method: **0.66384766696**
+* SLSQP: **0.66384742840**
+
+The equilibrium amounts I got were:
+
+* **H2 = 0.336152 mol**
+* **I2 = 0.336152 mol**
+* **HI = 1.327695 mol**
+
+Since both methods gave very similar answers, it shows that the calculation was consistent. I also made a graph of the equilibrium results.
+
+### Conclusion
+
+This part helped me understand how a chemical equilibrium problem can be solved using numerical methods. I also learned that using two different methods and comparing the results is a useful way to check the calculation.
+
+---
+
+### Titration — Bonus
+
+For the bonus part, I worked with a titration dataset containing the volume of base added and the pH.
+
+I used `np.gradient()` to calculate how quickly the pH was changing. The equivalence point is where the pH changes the fastest, so I used `np.argmax()` to find the largest slope.
+
+The result was:
+
+* **Equivalence point = 50.0**
+* **Maximum slope = 4.0**
+
+I also made two graphs. The first shows the pH changing as more base is added, and the second shows the slope of the curve. The largest slope occurs at **50.0**, which gives the equivalence point.
+
+### Conclusion
+
+This part showed me how the equivalence point can be found from titration data using Python. Instead of trying to find it just by looking at the graph, I used the numerical slope to find the point where the pH changes most quickly.
+
+---
+
 ## AI Assistance
 
 I used ChatGPT during the PWs to help me understand the coursework instructions, solve errors, and understand the Python, Git, and Snakemake steps. I wrote and checked the final code and report myself.
